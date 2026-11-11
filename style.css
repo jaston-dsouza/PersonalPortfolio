@@ -131,11 +131,12 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #00a8cc;
+    flex-shrink: 0;
 }
+
 .about-text {
     flex: 1;
 }
-
 .about-text h3 {
     color: #243b55;
     margin-bottom: 10px;
