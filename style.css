@@ -1,0 +1,151 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dce6f1;
+}
+
+/* Navigation */
+nav {
+    background-color: #102a43;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c6ff;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #243b55;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00a8cc;
+    padding-bottom: 8px;
+}
+
+/* Flexbox Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #00a8cc;
+}
+
+.card h3 {
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Skills */
+.skill {
+    background-color: #243b55;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contact */
+#contact a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #141e30;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+}
